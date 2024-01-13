@@ -1,0 +1,5 @@
+1. Necesidad (Documento)
+2. Definir los  requermientos(IEEE 830 / Trello) 
+3. Deseño (Mockup - Arquitectura)
+4. Desarrollo
+5. Pruebas e implemtación
