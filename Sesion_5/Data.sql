@@ -111,9 +111,11 @@ INSERT INTO materia (nombre, descripcion, credito, nota, numero_semestre) VALUES
     
 -- Matricula 
 INSERT INTO matricula( nota, estudiante_id, materia_id, grupo_id )VALUES
-(3.1, 1,2,1),
+(3.1, 1, 2,1),
 (4.1, 2, 2, 1),
-(4.2, 3, 1, 2),
+(5.0, 3, 1, 2),
+(3.2, 3, 2, 2),
+(2.2, 3, 3, 2),
 (3.0, 4, 3, 3);
 
 
@@ -133,3 +135,18 @@ INNER JOIN estudiante e ON p.id = e.persona_id;
 
 -- Indique la nota alcanzada en cada una de las materias que este matriculado un estudiante. 
 -- Filtre por número de documento.
+
+SELECT * FROM persona;
+SELECT 
+	e.codigo,
+	p.tipo_documento,
+    p.documento,
+	p.nombre_completo,
+    m.nota,
+    ma.nombre
+FROM 
+	persona p
+    INNER JOIN estudiante e ON p.id = e.persona_id
+    INNER JOIN matricula m ON e.id = m.estudiante_id
+    INNER JOIN materia ma ON m.materia_id = ma.id 
+WHERE p.documento = 1234567;
