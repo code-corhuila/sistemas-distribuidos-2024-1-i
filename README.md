@@ -36,4 +36,3 @@
 3. Genere comentario a cambio propuesto: git commit -m "Mensaje de cambios"
 4. Publicar cambios: git push
 5. Repetir paso 1.
-

@@ -150,3 +150,21 @@ FROM
     INNER JOIN matricula m ON e.id = m.estudiante_id
     INNER JOIN materia ma ON m.materia_id = ma.id 
 WHERE p.documento = 1234567;
+
+-- Mediante el numero de grupo, muestre el nombre del profesor a cargo, codigo estudiante, nombre 
+-- del estudiante y nombre de la materia que tenga asociados. 
+
+SELECT 
+	pr.nombre_completo AS nombreProfesor, 
+    e.codigo AS codigoEstudiante, 
+    pe.nombre_completo AS nombreEstudiante, 
+    m.nombre AS nombre_materia
+FROM grupo g
+	INNER JOIN matricula_profesor mp ON g.id = mp.grupo_id
+	INNER JOIN profesor p ON mp.profesor_id = p.id
+	INNER JOIN persona pr ON p.persona_id = pr.id
+	INNER JOIN matricula ma ON g.id = ma.grupo_id
+	INNER JOIN estudiante e ON ma.estudiante_id = e.id
+	INNER JOIN persona pe ON e.persona_id = pe.id
+	INNER JOIN materia m ON ma.materia_id = m.id
+WHERE g.numero_grupo = 1;
