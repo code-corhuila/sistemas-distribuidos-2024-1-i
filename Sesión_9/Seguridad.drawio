@@ -1,0 +1,22 @@
+<mxfile host="app.diagrams.net" modified="2024-01-23T02:42:11.803Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36" etag="VPrVaFpd3dJo6pozxyNo" version="22.1.21" type="github">
+  <diagram name="Página-1" id="IIn8IvTAEC2fjQHwMwsf">
+    <mxGraphModel dx="778" dy="484" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="ZbInm7uaOd__C0KMSzkE-1" value="&lt;ul&gt;&lt;li&gt;Personas {tipo_documento, documento, nombre, apellido, correo, direccion, telefono}&lt;/li&gt;&lt;li&gt;Usuarios {usuario, contrasenia}&lt;/li&gt;&lt;li&gt;Roles {codigo, nombre, descripcion}&lt;/li&gt;&lt;/ul&gt;" style="rounded=0;whiteSpace=wrap;html=1;align=left;" vertex="1" parent="1">
+          <mxGeometry x="20" y="10" width="250" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="ZbInm7uaOd__C0KMSzkE-2" value="&lt;div&gt;Condiciones:&amp;nbsp;&lt;/div&gt;&lt;div&gt;&lt;ul&gt;&lt;li&gt;Campos de auditoría {estado, fecha_creacion, fecha_modificacion, fecha_eliminacion}&lt;/li&gt;&lt;li&gt;&amp;nbsp;Documento de la persona representa a una única persona.&amp;nbsp;&lt;/li&gt;&lt;li&gt;El usuario, esta asociado a una única persona, y una persona solo puede tener un único usuario.&amp;nbsp;&lt;/li&gt;&lt;li&gt;El nombre, y codigo para los roles deben ser únicos.&amp;nbsp;&lt;/li&gt;&lt;/ul&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;align=left;" vertex="1" parent="1">
+          <mxGeometry x="20" y="110" width="250" height="180" as="geometry" />
+        </mxCell>
+        <mxCell id="ZbInm7uaOd__C0KMSzkE-3" value="&lt;ol&gt;&lt;li&gt;&amp;nbsp;Caso 1: Un usuario puede tener acceso a varios roles.&amp;nbsp;&lt;/li&gt;&lt;li&gt;Caso 2: Un usuario tiene acceso a un único rol.&lt;/li&gt;&lt;/ol&gt;" style="rounded=0;whiteSpace=wrap;html=1;align=left;fillColor=#ffe6cc;strokeColor=#d79b00;" vertex="1" parent="1">
+          <mxGeometry x="322" y="10" width="182" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="ZbInm7uaOd__C0KMSzkE-4" value="Roles&lt;br&gt;Formularios/Vistas&lt;br&gt;Modulos/Carpetas&lt;br&gt;Asignar permisos a los módulos&lt;br&gt;Asignar vist" style="rounded=0;whiteSpace=wrap;html=1;align=left;fillColor=#ffe6cc;strokeColor=#d79b00;" vertex="1" parent="1">
+          <mxGeometry x="332" y="190" width="278" height="120" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
