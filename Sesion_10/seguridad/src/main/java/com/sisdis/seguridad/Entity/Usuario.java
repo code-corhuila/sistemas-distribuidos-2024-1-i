@@ -29,27 +29,19 @@ public class Usuario {
 	@Column(name = "estado", nullable = true)
 	private Boolean estado;
 	
-	@Column(name = "fecha_creacion", nullable = true)
-	private LocalDateTime fechaCreacion;
-	
 	@Column(name = "fecha_modificacion", nullable = true)
 	private LocalDateTime fechaModificacion;
 	
 	@Column(name = "fecha_eliminacion", nullable = true)
 	private LocalDateTime fechaEliminacion;	
 	
-	@Column(name = "usuario_creacion", nullable = true)
-	private Long usuarioCreacion;
-	
-	@Column(name = "usuario_modificacion", nullable = true)
-	private Long usuarioModificacion;
-	
-	@Column(name = "usuarioEliminacion", nullable = true)
-	private Long usuarioEliminacion;
-	
 	@ManyToOne(fetch = FetchType.EAGER, optional = false)
 	@JoinColumn(name = "persona_id", nullable = false, unique = true)	
 	private Persona personaId;
+	
+	@ManyToOne(fetch = FetchType.EAGER, optional = false)
+	@JoinColumn(name = "rol_id", nullable = false, unique = true)	
+	private Rol rolId;
 }
 
 

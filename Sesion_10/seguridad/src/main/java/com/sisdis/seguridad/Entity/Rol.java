@@ -37,15 +37,6 @@ public class Rol {
 	
 	@Column(name = "fecha_eliminacion", nullable = true)
 	private LocalDateTime fechaEliminacion;	
-	
-	@Column(name = "usuario_creacion", nullable = true)
-	private Long usuarioCreacion;
-	
-	@Column(name = "usuario_modificacion", nullable = true)
-	private Long usuarioModificacion;
-	
-	@Column(name = "usuarioEliminacion", nullable = true)
-	private Long usuarioEliminacion;
 }
 
 
