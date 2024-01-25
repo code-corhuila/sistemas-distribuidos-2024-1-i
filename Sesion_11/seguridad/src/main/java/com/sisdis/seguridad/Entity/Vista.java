@@ -10,7 +10,7 @@ import jakarta.persistence.Id;
 import jakarta.persistence.Table;
 
 @Entity
-@Table(name = "vista")
+@Table(name = "vista_107964324")
 public class Vista {
 
 	@Id

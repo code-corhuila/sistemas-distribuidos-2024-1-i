@@ -10,7 +10,7 @@ import jakarta.persistence.ManyToOne;
 import jakarta.persistence.Table;
 
 @Entity
-@Table(name = "modulo_rol")
+@Table(name = "modulo_rol_107964324")
 public class ModuloRol {
 
 	@Id

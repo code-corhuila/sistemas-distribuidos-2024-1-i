@@ -10,7 +10,7 @@ import jakarta.persistence.Id;
 import jakarta.persistence.Table;
 
 @Entity
-@Table(name = "modulo")
+@Table(name = "modulo_107964324")
 public class Modulo {
 
 	@Id

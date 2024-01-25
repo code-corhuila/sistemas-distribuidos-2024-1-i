@@ -6,6 +6,6 @@ import org.springframework.stereotype.Repository;
 import com.sisdis.seguridad.Entity.UsuarioRol;
 
 @Repository
-public interface IUsarioRolRepository extends JpaRepository<UsuarioRol, Long>{
+public interface IUsuarioRolRepository extends JpaRepository<UsuarioRol, Long>{
 
 }
